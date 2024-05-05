@@ -1,8 +1,10 @@
 import streamlit as st
 import todo_functions
 import time
+from streamlit_autorefresh import st_autorefresh
 
-now = time.strftime("%b %d, %Y")
+st_autorefresh()
+now = time.strftime("%a, %b %d, %Y at %H:%M:%S")
 todos = todo_functions.get_todos()
 
 
