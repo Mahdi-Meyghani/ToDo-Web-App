@@ -2,7 +2,7 @@ import streamlit as st
 import todo_functions
 import time
 
-now = time.strftime("%b %d, %Y")
+now = time.strftime("%a, %b %d, %Y")
 todos = todo_functions.get_todos()
 
 
