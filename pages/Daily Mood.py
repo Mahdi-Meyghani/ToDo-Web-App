@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-import moods_function
+import moods_functions
 
 today = time.strftime("%Y/%m/%d")
 rating_list = moods_function.get_moods()
